@@ -33,7 +33,7 @@ export default function Home() {
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
               At <strong>YourBizSuite</strong>, we're building simple, effective tools to help entrepreneurs
               run smarter businesses. We understand the pain of juggling spreadsheets, invoices, expenses,
-              and tasks — because we’ve lived it.
+              and tasks — because we&apos;ve lived it.
             </p>
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
               Our mission is to give small business owners clarity and control with tools that are intuitive,
@@ -177,7 +177,7 @@ export default function Home() {
         {/* What’s Coming Section */}
         <section className="py-16 bg-[#162b3e] px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-10">What’s Coming Next...</h2>
+            <h2 className="text-3xl font-bold mb-10">What&apos;s Coming Next...</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
@@ -226,7 +226,7 @@ export default function Home() {
             </p>
 
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
-              After running a busy restaurant and juggling countless spreadsheets, invoices, and daily tasks — it became clear that small businesses needed simpler, smarter tools. That’s how <strong>Cashlytic</strong> was born — and we’re just getting started.
+              After running a busy restaurant and juggling countless spreadsheets, invoices, and daily tasks — it became clear that small businesses needed simpler, smarter tools. That&apos;s how <strong>Cashlytic</strong> was born — and we&apos;re just getting started.
             </p>
 
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
@@ -234,7 +234,7 @@ export default function Home() {
             </p>
 
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
-              Every product we build is rooted in empathy for the small business journey. Whether you're tracking your finances, managing tasks, or working with vendors — our tools aim to simplify your day-to-day and amplify your results.
+              Every product we build is rooted in empathy for the small business journey. Whether you&apos;re tracking your finances, managing tasks, or working with vendors — our tools aim to simplify your day-to-day and amplify your results.
             </p>
 
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
@@ -242,7 +242,7 @@ export default function Home() {
             </p>
 
             <p className="mt-6 text-[#94a6bd] italic">
-              “We’re not just building tools — we’re building peace of mind for small business owners.”
+              “We’re not just building tools — we&apos;re building peace of mind for small business owners.”
             </p>
           </div>
         </section>
