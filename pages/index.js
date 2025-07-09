@@ -31,7 +31,7 @@ export default function Home() {
               for Smarter Businesses
             </h1>
             <p className="mt-6 text-lg text-[#7c96b0] leading-relaxed">
-              At <strong>YourBizSuite</strong>, we're building simple, effective tools to help entrepreneurs
+              At <strong>YourBizSuite</strong>, we&apos;re building simple, effective tools to help entrepreneurs
               run smarter businesses. We understand the pain of juggling spreadsheets, invoices, expenses,
               and tasks — because we&apos;ve lived it.
             </p>
