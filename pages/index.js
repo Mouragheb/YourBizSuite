@@ -4,11 +4,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>YourBizSuite | Cashlytic & Business Tools</title>
-        <meta
-          name="description"
-          content="Cashlytic: Track income, expenses, invoices, and insights — effortlessly."
-        />
+        <title>YourBizSuite</title>
+        <meta name="description" content="Business tools that help you thrive" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+        <meta name="theme-color" content="#162b3e" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </Head>
 
       <header className="bg-[#d5e1e8] shadow-sm sticky top-0 z-50">
@@ -55,7 +57,7 @@ export default function Home() {
               TOOLS TO MAKE YOUR BUSINESS SUCCESSFUL
             </h2>
             <div className="flex justify-center items-center gap-3 mb-10">
-              <img src="/cashlytic-logo.jpg" alt="Cashlytic Logo" className="h-32 w-auto" />
+              <img src="/Cashlytic-logo.jpg" alt="Cashlytic Logo" className="h-32 w-auto" />
               <h3 className="text-2xl text-[#336659] font-semibold">Cashlytic</h3>
             </div>
             <h2 className="text-3xl font-bold mb-10">What Makes Cashlytic Powerful</h2>
@@ -182,7 +184,7 @@ export default function Home() {
               {[
                 {
                   name: "🗂️ ReTaskMan",
-                  img: "/ReTaskMan.png",
+                  img: "/ReTaskMan.PNG",
                   desc:
                     "A smart task manager mobile app built for small teams, restaurants, and fast-paced businesses. Assign, track, and complete tasks with clarity.",
                 },
