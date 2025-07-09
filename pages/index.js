@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </Head>
 
-      <header className="bg-[#d5e1e8] shadow-sm sticky top-0 z-50">
+      <header className="bg-white shadow px-4 py-2 sm:sticky sm:top-0 sm:z-50">
         <div className="w-full px-6 py-4">
           <img src="/logo.png" alt="YourBizSuite Logo" className="h-16 w-auto" />
         </div>
