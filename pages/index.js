@@ -161,7 +161,7 @@ export default function Home() {
               </div>
 
               {/* Video 5: Profit & Loss Table */}
-              <div className="aspect-w-16 aspect-h-9 md:col-span-2">
+              <div className="aspect-w-16 aspect-h-9">
                 <iframe
                   src="https://www.youtube.com/embed/FGuGQSyW7Uk"
                   title="Understand the Profit & Loss Table"
@@ -173,7 +173,7 @@ export default function Home() {
               </div>
 
               {/* Video 6: Export to PDF and Excel */}
-              <div className="aspect-w-16 aspect-h-9 md:col-span-2">
+              <div className="aspect-w-16 aspect-h-9">
                 <iframe
                   src="https://www.youtube.com/embed/oVp7Tviowbw"
                   title="Understand the Profit & Loss Table"
