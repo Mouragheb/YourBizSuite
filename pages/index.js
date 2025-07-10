@@ -172,6 +172,18 @@ export default function Home() {
                 <p className="mt-4 text-sm text-gray-600">Step 5: Understand the P&L Table — See Your Profit Clearly</p>
               </div>
 
+              {/* Video 6: Export to PDF and Excel */}
+              <div className="aspect-w-16 aspect-h-9 md:col-span-2">
+                <iframe
+                  src="https://www.youtube.com/embed/oVp7Tviowbw"
+                  title="Understand the Profit & Loss Table"
+                  className="w-full h-64 md:h-96 rounded-lg"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+                <p className="mt-4 text-sm text-gray-600">Step 6: Export your tables into Excel and pdf files.</p>
+              </div>
+
             </div>
           </div>
         </section>
