@@ -184,6 +184,30 @@ export default function Home() {
                 <p className="mt-4 text-sm text-gray-600">Step 6: Export your tables into Excel and pdf files.</p>
               </div>
 
+              {/* Video 7: Analytics page */}
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/JIw86atg-Kc"
+                  title="Understand the Profit & Loss Table"
+                  className="w-full h-64 md:h-96 rounded-lg"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+                <p className="mt-4 text-sm text-gray-600">Step 7: Unlock the Power of Your Business Data with Cashlytic Analytics!</p>
+              </div>
+
+              {/* Video 8: Database search page */}
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  src="https://www.youtube.com/embed/rJEqu3ER1u4"
+                  title="Understand the Profit & Loss Table"
+                  className="w-full h-64 md:h-96 rounded-lg"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+                <p className="mt-4 text-sm text-gray-600">Step 7: Search Your Business Records with Ease | Cashlytic Database Page Tutorial!</p>
+              </div>
+
             </div>
           </div>
         </section>
