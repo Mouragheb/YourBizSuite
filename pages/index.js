@@ -28,6 +28,30 @@ export default function Home() {
               alt="YourBizSuite Logo"
               className="h-32 w-auto mx-auto mb-6 animate-fadeInY"
             />
+            <div className="relative group w-full max-w-3xl mx-auto mb-12">
+              <img
+                src="/vision.png"
+                alt="Vision"
+                className="w-full h-auto rounded-lg shadow-xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+              />
+
+              {/* Overlay Banner */}
+              <div
+                className="absolute inset-0 bg-[#162b3e]/80 text-white flex items-center justify-center text-xl font-semibold px-4 text-center
+               opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none sm:pointer-events-auto sm:cursor-pointer"
+                onClick={() => {
+                  // Optional: handle mobile click to toggle overlay
+                  const el = document.getElementById("vision-overlay");
+                  if (el) el.classList.toggle("opacity-100");
+                }}
+                id="vision-overlay"
+              >
+                <div>
+                  <p className="text-2xl font-bold">Our Vision</p>
+                  <p className="mt-2 text-base">Building a future where business tools feel like magic.</p>
+                </div>
+              </div>
+            </div>
             <h1 className="text-5xl font-bold tracking-tight leading-tight">
               Smarter Tools <br className="hidden md:inline" />
               for Smarter Businesses
