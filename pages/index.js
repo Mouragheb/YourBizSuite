@@ -30,19 +30,19 @@ export default function Home() {
             />
             {/* Vision Banner Section */}
             <div className="relative w-full overflow-hidden group">
-              {/* Full-width Image */}
+              {/* Image */}
               <img
                 src="/vision.png"
                 alt="YourBizSuite Vision"
-                className="w-full max-h-[700px] object-cover"
+                className="w-full h-[300px] sm:h-[700px] object-cover"
               />
 
-              {/* Right Sliding Banner */}
+              {/* Sliding Banner */}
               <div
                 id="vision-slide"
-                className="absolute top-0 right-0 h-full max-h-[700px] bg-[#162b3ee6] text-white flex items-center px-6 sm:px-10 
-               w-[90%] sm:w-1/2 translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-10
-               sm:max-w-none max-w-sm shadow-lg"
+                className="absolute top-0 right-0 h-[300px] sm:h-full w-[85%] sm:w-1/2 bg-[#162b3edc] text-white px-4 sm:px-10 py-6 sm:py-12
+               flex items-start sm:items-center justify-center translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-10
+               overflow-y-auto sm:overflow-visible"
                 onClick={() => {
                   const el = document.getElementById("vision-slide");
                   if (window.innerWidth < 640) {
@@ -51,18 +51,17 @@ export default function Home() {
                   }
                 }}
               >
-                <div className="space-y-4 text-left">
-                  <h2 className="text-2xl sm:text-4xl font-bold text-yellow-400">Our Vision</h2>
+                <div className="space-y-3 sm:space-y-4 max-w-md text-left">
+                  <h2 className="text-xl sm:text-4xl font-bold text-yellow-400">Our Vision</h2>
                   <p className="text-sm sm:text-lg text-[#dbeafe] leading-relaxed">
                     At YourBizSuite, we envision a world where small business owners have the same level of clarity,
                     control, and peace of mind that large enterprises enjoy &mdash; without the cost or complexity.
                   </p>
                   <p className="text-sm sm:text-lg text-[#dbeafe] leading-relaxed">
                     We&apos;re building tools that are simple enough to use without training, yet powerful enough to
-                    transform the way entrepreneurs work. Every product we build reflects our deep empathy for the
-                    real-life challenges of running a small business.
+                    transform the way entrepreneurs work.
                   </p>
-                  <p className="italic text-xs sm:text-sm text-blue-200 mt-4">
+                  <p className="italic text-xs sm:text-sm text-blue-200 mt-2 hidden sm:block">
                     &ldquo;Empowering success &mdash; one tool, one business, one story at a time.&rdquo;
                   </p>
                 </div>
