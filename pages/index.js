@@ -28,27 +28,39 @@ export default function Home() {
               alt="YourBizSuite Logo"
               className="h-32 w-auto mx-auto mb-6 animate-fadeInY"
             />
-            <div className="relative group w-full max-w-3xl mx-auto mb-12">
+            {/* Vision Fullscreen Banner */}
+            <div className="relative w-full h-[90vh] overflow-hidden group">
               <img
                 src="/vision.png"
-                alt="Vision"
-                className="w-full h-auto rounded-lg shadow-xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                alt="YourBizSuite Vision"
+                className="w-full h-full object-cover"
               />
 
-              {/* Overlay Banner */}
+              {/* Left Sliding Banner */}
               <div
-                className="absolute inset-0 bg-[#162b3e]/80 text-white flex items-center justify-center text-xl font-semibold px-4 text-center
-               opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none sm:pointer-events-auto sm:cursor-pointer"
+                className="absolute top-0 left-0 h-full w-full sm:w-1/2 bg-[#162b3edc] text-white flex items-center px-8 sm:px-12 transition-transform duration-700 ease-in-out
+               translate-x-full sm:group-hover:translate-x-0"
+                id="vision-slide"
                 onClick={() => {
-                  // Optional: handle mobile click to toggle overlay
-                  const el = document.getElementById("vision-overlay");
-                  if (el) el.classList.toggle("opacity-100");
+                  const el = document.getElementById("vision-slide");
+                  if (el?.classList.contains("translate-x-full")) {
+                    el.classList.remove("translate-x-full");
+                  } else {
+                    el.classList.add("translate-x-full");
+                  }
                 }}
-                id="vision-overlay"
               >
-                <div>
-                  <p className="text-2xl font-bold">Our Vision</p>
-                  <p className="mt-2 text-base">Building a future where business tools feel like magic.</p>
+                <div className="space-y-4 max-w-md text-left">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400">Our Vision</h2>
+                  <p className="text-base sm:text-lg text-[#dbeafe] leading-relaxed">
+                    At YourBizSuite, we envision a world where small business owners have the same level of clarity, control, and peace of mind that large enterprises enjoy — without the cost or complexity.
+                  </p>
+                  <p className="text-base sm:text-lg text-[#dbeafe] leading-relaxed">
+                    We’re building tools that are simple enough to use without training, yet powerful enough to transform the way entrepreneurs work. Every product we build reflects our deep empathy for the real-life challenges of running a small business.
+                  </p>
+                  <p className="italic text-sm text-blue-200 mt-4">
+                    "Empowering success — one tool, one business, one story at a time."
+                  </p>
                 </div>
               </div>
             </div>
