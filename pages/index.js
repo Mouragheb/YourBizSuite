@@ -27,7 +27,8 @@ export default function Home() {
               src="/logo.png"
               alt="YourBizSuite Logo"
               className="h-32 w-auto mx-auto mb-6 animate-fadeInY"
-            />{/* Vision Banner Section */}
+            />
+            {/* Vision Banner Section */}
             <div className="relative w-full overflow-hidden group">
               {/* Full-width Image */}
               <img
@@ -35,18 +36,18 @@ export default function Home() {
                 alt="YourBizSuite Vision"
                 className="w-full max-h-[700px] object-cover"
               />
-            
-              {/* Left Sliding Banner */}
+
+              {/* Right Sliding Banner */}
               <div
                 id="vision-slide"
-                className="absolute top-0 left-0 h-full w-full sm:w-1/2 max-h-[700px] bg-[#162b3ee6] text-white flex items-center px-6 sm:px-10 
-                           -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-10"
+                className="absolute top-0 right-0 h-full w-full sm:w-1/2 max-h-[700px] bg-[#162b3ee6] text-white flex items-center px-6 sm:px-10 
+               translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out z-10"
                 onClick={() => {
-                  // Mobile toggle on tap
+                  // Mobile tap toggle
                   const el = document.getElementById("vision-slide");
                   if (window.innerWidth < 640) {
                     el?.classList.toggle("translate-x-0");
-                    el?.classList.toggle("-translate-x-full");
+                    el?.classList.toggle("translate-x-full");
                   }
                 }}
               >
