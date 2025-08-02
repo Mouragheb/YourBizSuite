@@ -59,7 +59,7 @@ export default function Home() {
                     We&apos;re building tools that are simple enough to use without training, yet powerful enough to transform the way entrepreneurs work. Every product we build reflects our deep empathy for the real-life challenges of running a small business.
                   </p>
                   <p className="italic text-sm text-blue-200 mt-4">
-                    "Empowering success — one tool, one business, one story at a time."
+                  &ldquo;Empowering success — one tool, one business, one story at a time.&rdquo;
                   </p>
                 </div>
               </div>
