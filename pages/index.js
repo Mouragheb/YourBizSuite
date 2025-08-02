@@ -7,8 +7,8 @@ export default function Home() {
       <Head>
         <title>YourBizSuite</title>
         <meta name="description" content="Business tools that help you thrive" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+        <link rel="icon" href="/icon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
         <meta name="theme-color" content="#162b3e" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
