@@ -32,7 +32,7 @@ export default function VisionSection() {
         }}
       >
         <div className="space-y-4 max-w-md text-left text-sm sm:text-base">
-          <h2 className="text-xl sm:text-4xl font-bold text-yellow-400">Our Vision</h2>
+        <h2 className="text-xl sm:text-4xl font-bold text-yellow-400 mt-3 sm:mt-0">Our Vision</h2>
           <p className="text-[#dbeafe] leading-relaxed">
             At YourBizSuite, we envision a world where small business owners have the same level of clarity,
             control, and peace of mind that large enterprises enjoy &mdash; without the cost or complexity.
