@@ -10,7 +10,7 @@ export default function VisionSection() {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden group">
+    <div className="relative w-full overflow-hidden group border rounded-sm">
       {/* Background Image */}
       <img
         src="/vision.png"
