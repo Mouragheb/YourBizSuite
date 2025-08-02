@@ -56,7 +56,7 @@ export default function Home() {
                     At YourBizSuite, we envision a world where small business owners have the same level of clarity, control, and peace of mind that large enterprises enjoy — without the cost or complexity.
                   </p>
                   <p className="text-base sm:text-lg text-[#dbeafe] leading-relaxed">
-                    We’re building tools that are simple enough to use without training, yet powerful enough to transform the way entrepreneurs work. Every product we build reflects our deep empathy for the real-life challenges of running a small business.
+                    We&apos;re building tools that are simple enough to use without training, yet powerful enough to transform the way entrepreneurs work. Every product we build reflects our deep empathy for the real-life challenges of running a small business.
                   </p>
                   <p className="italic text-sm text-blue-200 mt-4">
                     "Empowering success — one tool, one business, one story at a time."
