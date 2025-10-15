@@ -216,7 +216,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-6 text-white">OUR STORY</h2>
 
             <img
-              src="/mous1.jpg"
+              src="/mous2.png"
               alt="Moustafa Ragheb"
               className="mx-auto h-32 w-32 rounded-full object-cover object-top mb-4 shadow"
             />
