@@ -59,7 +59,7 @@ export default function Home() {
               TOOLS TO MAKE YOUR BUSINESS SUCCESSFUL
             </h2>
             <div className="flex justify-center items-center gap-3 mb-10">
-              <img src="/cashlytic-logo.jpg" alt="Cashlytic Logo" className="h-32 w-auto" />
+              <img src="/cashlytic-logo1.png" alt="Cashlytic Logo" className="h-32 w-auto" />
               <h3 className="text-2xl text-[#336659] font-semibold">Cashlytic</h3>
             </div>
             <h2 className="text-3xl font-bold mb-10">What Makes Cashlytic Powerful</h2>
@@ -119,6 +119,7 @@ export default function Home() {
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/demo.mp4"
+                    poster="/Demo_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
                     preload="metadata"
@@ -129,7 +130,7 @@ export default function Home() {
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                  Overview: Quick produst Overview for some of cashlytic great features.
+                  Overview: Quick product overview highlighting some of Cashlytic’s best features.
                 </p>
               </div>
 
@@ -138,6 +139,7 @@ export default function Home() {
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/dashboard.mp4"
+                    poster="/dashboard_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
                     preload="metadata"
@@ -148,7 +150,7 @@ export default function Home() {
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                  Dashboar: Income, Expense and Profit/Loss tables explained in depth.
+                  Dashboard: Explore the Income, Expense, and Profit/Loss tables in detail.
                 </p>
               </div>
 
@@ -157,6 +159,7 @@ export default function Home() {
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/estimate-invoice.mp4"
+                    poster="/Estimate-Invoice_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
                     preload="metadata"
@@ -167,7 +170,7 @@ export default function Home() {
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                  Estimates & Invoices: Create an Estimate, Concvert it to Invoice, Send Invoice to client and get Paid in a blink of an eye! 
+                  Estimates & Invoices: Create estimates, convert them to invoices, send to clients, and get paid in a blink of an eye!
                 </p>
               </div>
             </div>
