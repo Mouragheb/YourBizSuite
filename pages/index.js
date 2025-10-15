@@ -59,7 +59,7 @@ export default function Home() {
               TOOLS TO MAKE YOUR BUSINESS SUCCESSFUL
             </h2>
             <div className="flex justify-center items-center gap-3 mb-10">
-              <img src="/Cashlytic-logo.jpg" alt="Cashlytic Logo" className="h-32 w-auto" />
+              <img src="/cashlytic-logo.jpg" alt="Cashlytic Logo" className="h-32 w-auto" />
               <h3 className="text-2xl text-[#336659] font-semibold">Cashlytic</h3>
             </div>
             <h2 className="text-3xl font-bold mb-10">What Makes Cashlytic Powerful</h2>
@@ -112,104 +112,64 @@ export default function Home() {
         <section className="py-16 bg-white px-6">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-10">Cashlytic Walkthrough</h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-              {/* Video 1: Get Started */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/JWx1XhXLjYo"
-                  title="Get Started - Login & Create Store"
-                  className="w-full h-64 md:h-80 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 1: Get Started — Login & Create Your First Store</p>
+              {/* Video 1: Demo / Overview */}
+              <div>
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    src="/demo.mp4"
+                    className="w-full h-full rounded-lg"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-4 text-sm text-gray-600">
+                  Overview: Quick produst Overview for some of cashlytic great features.
+                </p>
               </div>
 
-              {/* Video 2: Fill Income Table */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/wgzDRZ52Wqk"
-                  title="Fill Income Table"
-                  className="w-full h-64 md:h-80 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 2: Fill and Edit Income Table with Deductions</p>
+              {/* Video 2: Dashboard */}
+              <div>
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    src="/dashboard.mp4"
+                    className="w-full h-full rounded-lg"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-4 text-sm text-gray-600">
+                  Dashboar: Income, Expense and Profit/Loss tables explained in depth.
+                </p>
               </div>
 
-              {/* Video 3: Fill Expense Table */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/JV30vyqMW2o"
-                  title="Fill Expense Table"
-                  className="w-full h-64 md:h-80 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 3: Add and Manage Expenses with Category Tracking</p>
+              {/* Video 3: Estimates & Invoices */}
+              <div className="md:col-span-2">
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    src="/estimate-invoice.mp4"
+                    className="w-full h-full rounded-lg"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-4 text-sm text-gray-600">
+                  Estimates & Invoices: Create an Estimate, Concvert it to Invoice, Send Invoice to client and get Paid in a blink of an eye! 
+                </p>
               </div>
-
-              {/* Video 4: Category Groups */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/KoKdwplvx8s"
-                  title="Category Groups"
-                  className="w-full h-64 md:h-80 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 4: Organize Categories into Groups for Simpler Reporting</p>
-              </div>
-
-              {/* Video 5: Profit & Loss Table */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/FGuGQSyW7Uk"
-                  title="Understand the Profit & Loss Table"
-                  className="w-full h-64 md:h-96 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 5: Understand the P&L Table — See Your Profit Clearly</p>
-              </div>
-
-              {/* Video 6: Export to PDF and Excel */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/oVp7Tviowbw"
-                  title="Understand the Profit & Loss Table"
-                  className="w-full h-64 md:h-96 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 6: Export your tables into Excel and pdf files.</p>
-              </div>
-
-              {/* Video 7: Analytics page */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/JIw86atg-Kc"
-                  title="Understand the Profit & Loss Table"
-                  className="w-full h-64 md:h-96 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 7: Unlock the Power of Your Business Data with Cashlytic Analytics!</p>
-              </div>
-
-              {/* Video 8: Database search page */}
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  src="https://www.youtube.com/embed/rJEqu3ER1u4"
-                  title="Understand the Profit & Loss Table"
-                  className="w-full h-64 md:h-96 rounded-lg"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-                <p className="mt-4 text-sm text-gray-600">Step 7: Search Your Business Records with Ease | Cashlytic Database Page Tutorial!</p>
-              </div>
-
             </div>
           </div>
         </section>
@@ -253,7 +213,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-6 text-white">OUR STORY</h2>
 
             <img
-              src="/mous.jpg"
+              src="/mous1.jpg"
               alt="Moustafa Ragheb"
               className="mx-auto h-32 w-32 rounded-full object-cover object-top mb-4 shadow"
             />
