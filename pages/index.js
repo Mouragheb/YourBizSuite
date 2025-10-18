@@ -134,7 +134,28 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Video 2: Dashboard */}
+              {/* Video 2: MultiBusinesses / Overview */}
+              <div>
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    src="/Multi-Businesses.mp4"
+                    poster="/multi_thumbnail.png"
+                    className="w-full h-full rounded-lg"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-4 text-sm text-gray-600">
+                  Overview: One Dashboard. Unlimited Possibilities.
+                  Whether you run a restaurant, a retail shop, or a service-based company, Cashlytic lets you manage multiple businesses — even across different industries — all in one account.
+                </p>
+              </div>
+
+              {/* Video 3: Dashboard */}
               <div>
                 <div className="aspect-w-16 aspect-h-9">
                   <video
@@ -154,7 +175,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Video 3: Estimates & Invoices */}
+              {/* Video 4: Estimates & Invoices */}
               <div className="md:col-span-2">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
