@@ -176,7 +176,7 @@ export default function Home() {
               </div>
 
               {/* Video 4: Estimates & Invoices */}
-              <div className="md:col-span-2">
+              <div>
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/estimate-invoice.mp4"
