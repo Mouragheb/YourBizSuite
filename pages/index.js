@@ -175,8 +175,29 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Video 4: Estimates & Invoices */}
+              {/* Video 4: Analytics */}
               <div>
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    src="/Analytics.mp4"
+                    poster="/Analytics_thumbnail.png"
+                    className="w-full h-full rounded-lg"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-4 text-sm text-gray-600">
+                  Analytics: Turn Data Into Decisions with Cashlytic Analytics
+                  Numbers alone don’t tell the full story — insights do.
+                </p>
+              </div>
+
+              {/* Video 5: Estimates & Invoices */}
+              <div className="md:col-span-2">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/estimate-invoice.mp4"
