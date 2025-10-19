@@ -180,7 +180,7 @@ export default function Home() {
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/Analytics.mp4"
-                    poster="/Analytics_thumbnail.png"
+                    poster="/Analytics-thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
                     preload="metadata"
