@@ -197,7 +197,7 @@ export default function Home() {
               </div>
 
               {/* Video 5: Estimates & Invoices */}
-              <div className="md:col-span-2">
+              <div className="">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
                     src="/estimate-invoice.mp4"
@@ -213,6 +213,26 @@ export default function Home() {
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
                   Estimates & Invoices: Create estimates, convert them to invoices, send to clients, and get paid in a blink of an eye!
+                </p>
+              </div>
+
+              {/* Video 6: DataBase*/}
+              <div className="">
+                <div className="aspect-w-16 aspect-h-9">
+                  <video
+                    src="/DataBaseVideo.mp4"
+                    poster="/database_thumbnail.png"
+                    className="w-full h-full rounded-lg"
+                    controls
+                    preload="metadata"
+                    playsInline
+                    controlsList="nodownload"
+                  >
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p className="mt-4 text-sm text-gray-600">
+                With its Database Search, users can instantly find entries, view totals, and analyze finances with smart filters. Let’s see an example of it in action.
                 </p>
               </div>
             </div>
