@@ -2,6 +2,105 @@ import Head from "next/head";
 import VisionSection from "../components/VisionSection";
 
 export default function Home() {
+  // Change this if you use www
+  const BASE = "https://yourbizsuite.com";
+
+  // Video metadata used for JSON-LD + anchors
+  const VIDEOS = [
+    {
+      slug: "demo",
+      name: "Cashlytic Demo / Overview",
+      mp4: "/demo.mp4",
+      poster: "/Demo_thumbnail.png",
+      description:
+        "Quick product overview showing how Cashlytic tracks income, expenses, analytics and invoices.",
+      // 0:57
+      duration: "PT57S",
+      seconds: 57,
+      uploadDate: "2025-11-06",
+    },
+    {
+      slug: "multi1",
+      name: "Multi-Business Overview",
+      mp4: "/multi1.mp4",
+      poster: "/multi1_thumbnail.png",
+      description:
+        "Manage multiple businesses from a single Cashlytic account—one dashboard, unlimited possibilities.",
+      // 1:53
+      duration: "PT1M53S",
+      seconds: 113,
+      uploadDate: "2025-11-06",
+    },
+    {
+      slug: "dashboard",
+      name: "Dashboard Deep Dive",
+      mp4: "/dashboard.mp4",
+      poster: "/dashboard_thumbnail.png",
+      description:
+        "Explore the Income, Expense, and Profit/Loss tables in detail.",
+      // 5:07
+      duration: "PT5M7S",
+      seconds: 307,
+      uploadDate: "2025-11-06",
+    },
+    {
+      slug: "analytics",
+      name: "Analytics Walkthrough",
+      mp4: "/Analytics.mp4",
+      poster: "/Analytics-thumbnail.png",
+      description:
+        "Turn data into decisions with Cashlytic Analytics—category breakdowns, trends, and insights.",
+      // 1:43
+      duration: "PT1M43S",
+      seconds: 103,
+      uploadDate: "2025-11-06",
+    },
+    {
+      slug: "estimate-invoice",
+      name: "Estimates & Invoices",
+      mp4: "/estimate-invoice.mp4",
+      poster: "/Estimate-Invoice_thumbnail.png",
+      description:
+        "Create estimates, convert to invoices, email clients, and get paid via Stripe.",
+      // 3:53
+      duration: "PT3M53S",
+      seconds: 233,
+      uploadDate: "2025-11-06",
+    },
+    {
+      slug: "database",
+      name: "Database Search Feature",
+      mp4: "/DataBaseVideo.mp4",
+      poster: "/database_thumbnail.png",
+      description:
+        "Find entries instantly, view totals, and analyze finances with smart filters.",
+      // 2:51
+      duration: "PT2M51S",
+      seconds: 171,
+      uploadDate: "2025-11-06",
+    },
+  ];
+
+  const videoJsonLd = VIDEOS.map((v) => ({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: v.name,
+    description: v.description,
+    thumbnailUrl: [`${BASE}${v.poster}`],
+    uploadDate: v.uploadDate,
+    duration: v.duration,
+    contentUrl: `${BASE}${v.mp4}`,
+    embedUrl: `${BASE}/#video-${v.slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "YourBizSuite",
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE}/logo.png`,
+      },
+    },
+  }));
+
   return (
     <>
       <Head>
@@ -12,6 +111,12 @@ export default function Home() {
         <meta name="theme-color" content="#162b3e" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        {/* VideoObject structured data for all videos */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+        />
       </Head>
 
       <header className="bg-white shadow px-4 py-2 sm:sticky sm:top-0 sm:z-50">
@@ -67,28 +172,34 @@ export default function Home() {
               {[
                 {
                   title: "Desktop Web Application",
-                  desc: "Track income, expenses, and invoices with powerful tables, visual analytics, and AI insights — all in one streamlined dashboard."
+                  desc:
+                    "Track income, expenses, and invoices with powerful tables, visual analytics, and AI insights — all in one streamlined dashboard.",
                 },
                 {
                   title: "Inline Entry Tracking",
-                  desc: "Add, edit, or delete income and expenses directly in the table — no popups or extra steps."
+                  desc:
+                    "Add, edit, or delete income and expenses directly in the table — no popups or extra steps.",
                 },
                 {
                   title: "Visual Analytics",
-                  desc: "Visualize your income, expenses, and profit over time with interactive charts. View category breakdowns, monthly trends, and P&L summaries."
+                  desc:
+                    "Visualize your income, expenses, and profit over time with interactive charts. View category breakdowns, monthly trends, and P&L summaries.",
                 },
                 {
                   title: "AI Revenue Insights",
-                  desc: "Get smart, AI-powered suggestions and breakdowns to boost your profitability."
+                  desc:
+                    "Get smart, AI-powered suggestions and breakdowns to boost your profitability.",
                 },
                 {
                   title: "PDF & Excel Export",
-                  desc: "One-click exports of all income, expenses, and P&L reports — professionally formatted."
+                  desc:
+                    "One-click exports of all income, expenses, and P&L reports — professionally formatted.",
                 },
                 {
                   title: "Invoices + Stripe Payments",
-                  desc: "Create invoices, send them to clients, and receive payments via Stripe."
-                }
+                  desc:
+                    "Create invoices, send them to clients, and receive payments via Stripe.",
+                },
               ].map((item) => (
                 <div
                   key={item.title}
@@ -115,10 +226,9 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Video 1: Demo / Overview */}
-              <div>
+              <div id="video-demo">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
-                    src="/demo.mp4"
                     poster="/Demo_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
@@ -126,6 +236,7 @@ export default function Home() {
                     playsInline
                     controlsList="nodownload"
                   >
+                    <source src="/demo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -135,10 +246,9 @@ export default function Home() {
               </div>
 
               {/* Video 2: MultiBusinesses / Overview */}
-              <div>
+              <div id="video-multi1">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
-                    src="/multi1.mp4"
                     poster="/multi1_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
@@ -146,20 +256,20 @@ export default function Home() {
                     playsInline
                     controlsList="nodownload"
                   >
+                    <source src="/multi1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                  Overview: One Dashboard. Unlimited Possibilities.
-                  Whether you run a restaurant, a retail shop, or a service-based company, Cashlytic lets you manage multiple businesses — even across different industries — all in one account.
+                  Overview: One Dashboard. Unlimited Possibilities. Whether you run a restaurant, a retail shop,
+                  or a service-based company, Cashlytic lets you manage multiple businesses — all in one account.
                 </p>
               </div>
 
               {/* Video 3: Dashboard */}
-              <div>
+              <div id="video-dashboard">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
-                    src="/dashboard.mp4"
                     poster="/dashboard_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
@@ -167,6 +277,7 @@ export default function Home() {
                     playsInline
                     controlsList="nodownload"
                   >
+                    <source src="/dashboard.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -176,10 +287,9 @@ export default function Home() {
               </div>
 
               {/* Video 4: Analytics */}
-              <div>
+              <div id="video-analytics">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
-                    src="/Analytics.mp4"
                     poster="/Analytics-thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
@@ -187,20 +297,20 @@ export default function Home() {
                     playsInline
                     controlsList="nodownload"
                   >
+                    <source src="/Analytics.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                  Analytics: Turn Data Into Decisions with Cashlytic Analytics
-                  Numbers alone don’t tell the full story — insights do.
+                  Analytics: Turn Data Into Decisions with Cashlytic Analytics — numbers alone don’t tell the full
+                  story, insights do.
                 </p>
               </div>
 
               {/* Video 5: Estimates & Invoices */}
-              <div className="">
+              <div id="video-estimate-invoice">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
-                    src="/estimate-invoice.mp4"
                     poster="/Estimate-Invoice_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
@@ -208,19 +318,19 @@ export default function Home() {
                     playsInline
                     controlsList="nodownload"
                   >
+                    <source src="/estimate-invoice.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                  Estimates & Invoices: Create estimates, convert them to invoices, send to clients, and get paid in a blink of an eye!
+                  Estimates & Invoices: Create estimates, convert them to invoices, send to clients, and get paid fast.
                 </p>
               </div>
 
-              {/* Video 6: DataBase*/}
-              <div className="">
+              {/* Video 6: Database */}
+              <div id="video-database">
                 <div className="aspect-w-16 aspect-h-9">
                   <video
-                    src="/DataBaseVideo.mp4"
                     poster="/database_thumbnail.png"
                     className="w-full h-full rounded-lg"
                     controls
@@ -228,11 +338,12 @@ export default function Home() {
                     playsInline
                     controlsList="nodownload"
                   >
+                    <source src="/DataBaseVideo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <p className="mt-4 text-sm text-gray-600">
-                With its Database Search, users can instantly find entries, view totals, and analyze finances with smart filters. Let’s see an example of it in action.
+                  Database Search: instantly find entries, view totals, and analyze finances with smart filters.
                 </p>
               </div>
             </div>
