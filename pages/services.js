@@ -108,7 +108,7 @@ export default function Services() {
               Clean communication, fast delivery, and real business experience.
             </p>
 
-            
+
           </div>
         </section>
 
@@ -116,12 +116,16 @@ export default function Services() {
         <section className="py-14 bg-[#d5e1e8] px-6 text-[#162b3e]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Website Packages</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
+                Website Packages
+              </h2>
               <p className="text-slate-700 max-w-3xl mx-auto">
-                Transparent ranges — final quote depends on scope, content readiness, and integrations.
+                Transparent ranges — final quote depends on scope, content readiness,
+                and integrations.
               </p>
             </div>
 
+            {/* Cards */}
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-7">
               {packages.map((p) => (
                 <div
@@ -145,7 +149,10 @@ export default function Services() {
                   </ul>
                 </div>
               ))}
-              <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            </div>
+
+            {/* Bottom centered CTA */}
+            <div className="mt-10 text-center">
               <a
                 href={BOOKING_LINK}
                 className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
@@ -154,7 +161,6 @@ export default function Services() {
               >
                 Book a Google Meet Appointment (YBS Meet)
               </a>
-            </div>
             </div>
           </div>
         </section>
