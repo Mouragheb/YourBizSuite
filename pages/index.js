@@ -142,7 +142,7 @@ export default function Home() {
     },
     {
       name: "YBS BrandMail",
-      logo: "/ybsbranmail.png",
+      logo: "/ybsbrandmail5.png",
       tagline: "Beautiful business emails without complexity",
       bullets: [
         "Build stunning emails using 50+ professionally designed themes",
@@ -243,14 +243,6 @@ export default function Home() {
             >
               Services
             </Link>
-            <a
-              href={APPS_HUB}
-              className="text-sm font-semibold bg-[#336659] text-white px-4 py-2 rounded-md hover:bg-[#284438] transition"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open Apps
-            </a>
           </nav>
         </div>
       </header>
