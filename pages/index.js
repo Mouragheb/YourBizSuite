@@ -306,6 +306,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#2C3E50] via-[#336659] to-[#F4B400] drop-shadow-md">
                 TOOLS TO MAKE YOUR BUSINESS SUCCESSFUL
               </h2>
+
               <img
                 src="/ybsapps5.png"
                 alt="YourBizSuite Apps"
@@ -318,11 +319,16 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Apps grid */}
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {apps.map((app) => (
+              {apps.map((app, index) => (
                 <div
                   key={app.name}
-                  className="bg-[#f9f7f6] p-7 rounded-xl shadow-sm border border-transparent hover:shadow-lg hover:border-[#336659]/20 transition"
+                  className={[
+                    "bg-[#f9f7f6] p-7 rounded-xl shadow-sm border border-transparent transition",
+                    "hover:shadow-lg hover:border-[#336659]/20",
+                    index === 0 ? "lg:col-span-2" : "", // 👈 Cashlytic spans 2 columns
+                  ].join(" ")}
                 >
                   <div className="flex items-center gap-4">
                     <img src={app.logo} alt={`${app.name} logo`} className="h-16 w-auto" />
@@ -354,7 +360,7 @@ export default function Home() {
                     </a>
 
                     <Link
-                      href="/services"
+                      to="/services"
                       className="inline-block bg-white border border-slate-200 text-slate-800 px-5 py-2.5 rounded-md hover:bg-slate-50 transition text-sm font-semibold"
                     >
                       Hire Us (Services)
@@ -364,6 +370,7 @@ export default function Home() {
               ))}
             </div>
 
+            {/* Bottom CTA */}
             <div className="mt-10 text-center">
               <a
                 href={APPS_HUB}
