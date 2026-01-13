@@ -359,12 +359,12 @@ export default function Home() {
                       {app.ctaText}
                     </a>
 
-                    <Link
-                      to="/services"
+                    <a
+                      href="/services"
                       className="inline-block bg-white border border-slate-200 text-slate-800 px-5 py-2.5 rounded-md hover:bg-slate-50 transition text-sm font-semibold"
                     >
                       Hire Us (Services)
-                    </Link>
+                    </a>
                   </div>
                 </div>
               ))}
