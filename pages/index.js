@@ -260,8 +260,8 @@ export default function Home() {
         <section className="py-24 bg-[#162b3e] px-4 text-center relative overflow-hidden">
           <div className="max-w-4xl mx-auto">
             <img
-              src="/ybsapps5.png"
-              alt="YourBizSuite Apps"
+              src="/logo.png"
+              alt="YourBizSuite"
               className="h-28 w-auto mx-auto mb-6 animate-fadeInY"
             />
 
@@ -314,6 +314,11 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#2C3E50] via-[#336659] to-[#F4B400] drop-shadow-md">
                 TOOLS TO MAKE YOUR BUSINESS SUCCESSFUL
               </h2>
+              <img
+                src="/ybsapps5.png"
+                alt="YourBizSuite Apps"
+                className="h-28 w-auto mx-auto mb-6 animate-fadeInY"
+              />
 
               <p className="max-w-3xl mx-auto text-slate-700">
                 One platform, one login, multiple businesses — with five apps that work together to help you run
