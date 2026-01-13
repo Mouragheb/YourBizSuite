@@ -328,7 +328,7 @@ export default function Home() {
                     <img src={app.logo} alt={`${app.name} logo`} className="h-16 w-auto" />
                     <div>
                       <h3 className="text-2xl font-extrabold text-[#162b3e]">{app.name}</h3>
-                      <p className="text-sm text-[#336659] font-semibold">{app.tagline}</p>
+                      <p className="text-sm text-sky-600 font-semibold">{app.tagline}</p>
                     </div>
                   </div>
 
@@ -346,7 +346,7 @@ export default function Home() {
                   <div className="mt-6 flex flex-col sm:flex-row gap-3">
                     <a
                       href={app.ctaHref}
-                      className="inline-block bg-[#336659] text-white px-5 py-2.5 rounded-md hover:bg-[#284438] transition text-sm font-semibold"
+                      className="inline-block bg-sky-600 text-white px-5 py-2.5 rounded-md hover:bg-sky-500 transition text-sm font-semibold"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -382,7 +382,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
               <img src="/ybscashlytic5.png" alt="Cashlytic" className="h-14 w-auto" />
-              <h2 className="text-3xl font-bold text-[#162b3e]">Cashlytic Walkthrough</h2>
+              <h2 className="text-3xl font-bold text-[#1c4d29]">Cashlytic Walkthrough</h2>
             </div>
 
             <p className="text-sm text-slate-600 mb-10">

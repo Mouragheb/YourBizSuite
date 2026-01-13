@@ -81,7 +81,7 @@ export default function Services() {
             </Link>
             <a
               href={APPS_HUB}
-              className="text-sm font-semibold bg-[#336659] text-white px-4 py-2 rounded-md hover:bg-[#284438] transition"
+              className="text-sm font-semibold bg-sky-600 text-white px-4 py-2 rounded-md hover:bg-sky-500 transition"
               target="_blank"
               rel="noreferrer"
             >
@@ -110,7 +110,7 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Book a Call (YBS Meet)
+                Book a Google Meet Appointment (YBS Meet)
               </a>
               <Link
                 href="/"
@@ -184,11 +184,11 @@ export default function Services() {
             <div className="mt-10 text-center">
               <a
                 href={BOOKING_LINK}
-                className="inline-block bg-[#336659] text-white px-7 py-3 rounded-md hover:bg-[#284438] transition font-semibold"
+                className="inline-block bg-sky-600 text-white px-7 py-3 rounded-md hover:bg-sky-500 transition font-semibold"
                 target="_blank"
                 rel="noreferrer"
               >
-                Book a Call to Quote Your Project
+                Book a Google Meet Appointment (YBS Meet)
               </a>
             </div>
           </div>
@@ -220,6 +220,15 @@ export default function Services() {
               Tip: If you want a fixed-price quote, come with a short scope list (pages/features + integrations),
               or we can build that scope together during the consultation.
             </p>
+
+            <a
+                href={BOOKING_LINK}
+                className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Google Meet Appointment (YBS Meet)
+            </a>
           </div>
         </section>
 
