@@ -221,14 +221,17 @@ export default function Services() {
                 </div>
               ))}
             </div>
-            <a
-              href={BOOKING_LINK}
-              className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Book a Google Meet Appointment (YBS Meet)
-            </a>
+            {/* Bottom centered CTA */}
+            <div className="mt-10 text-center">
+              <a
+                href={BOOKING_LINK}
+                className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Google Meet Appointment (YBS Meet)
+              </a>
+            </div>
           </div>
         </section>
 
