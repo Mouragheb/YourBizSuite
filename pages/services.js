@@ -95,6 +95,11 @@ export default function Services() {
         {/* Hero */}
         <section className="py-16 px-6">
           <div className="max-w-5xl mx-auto text-center">
+            <img
+              src="/logo.png"
+              alt="YourBizSuite"
+              className="h-28 w-auto mx-auto mb-6 animate-fadeInY"
+            />
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
               Services by YourBizSuite Software LLC
             </h1>
@@ -112,12 +117,6 @@ export default function Services() {
               >
                 Book a Google Meet Appointment (YBS Meet)
               </a>
-              <Link
-                href="/"
-                className="inline-block bg-white/10 text-white px-7 py-3 rounded-md font-semibold hover:bg-white/15 transition"
-              >
-                Back to Home
-              </Link>
             </div>
           </div>
         </section>
@@ -222,12 +221,12 @@ export default function Services() {
             </p>
 
             <a
-                href={BOOKING_LINK}
-                className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Book a Google Meet Appointment (YBS Meet)
+              href={BOOKING_LINK}
+              className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book a Google Meet Appointment (YBS Meet)
             </a>
           </div>
         </section>
