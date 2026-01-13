@@ -108,16 +108,7 @@ export default function Services() {
               Clean communication, fast delivery, and real business experience.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href={BOOKING_LINK}
-                className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Book a Google Meet Appointment (YBS Meet)
-              </a>
-            </div>
+            
           </div>
         </section>
 
@@ -154,6 +145,16 @@ export default function Services() {
                   </ul>
                 </div>
               ))}
+              <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href={BOOKING_LINK}
+                className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Google Meet Appointment (YBS Meet)
+              </a>
+            </div>
             </div>
           </div>
         </section>
@@ -214,12 +215,6 @@ export default function Services() {
                 </div>
               ))}
             </div>
-
-            <p className="mt-10 text-sm text-[#b9c9db] max-w-3xl mx-auto">
-              Tip: If you want a fixed-price quote, come with a short scope list (pages/features + integrations),
-              or we can build that scope together during the consultation.
-            </p>
-
             <a
               href={BOOKING_LINK}
               className="inline-block bg-[#F4B400] text-[#162b3e] px-7 py-3 rounded-md font-semibold hover:opacity-90 transition"
